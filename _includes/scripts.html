@@ -1,7 +1,7 @@
 <script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js"></script>
 <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/plugins.js"></script>
-<script type="text/javascript" src="owl-carousel/owl.carousel.min.js"></script>
+<!-- <script type="text/javascript" src="owl-carousel/owl.carousel.min.js"></script> -->
 <script type="text/javascript" src="js/main.js"></script>
 
 <script>
@@ -13,21 +13,21 @@
     SLAMR.skillbar("animated");
     SLAMR.slideDownHead(true);
     SLAMR.scrollAnim("yes");
-    SLAMR.owlCarousel({
-      '#owl-carousel-blog':{singleItem : true,
-        lazyLoad:true,
-        autoPlay : true},
-        '#owl-carousel-clients':{navigation: true,
-          navigationText: [
-          "<i class='fa fa-angle-left arrow-round'></i>",
-          "<i class='fa fa-angle-right arrow-round'></i>"
-          ]},
-          '#owl-carousel-testimonial':{singleItem:true,transitionStyle: "goDown",navigation: true,
-          navigationText: [
-          "<i class='fa fa-angle-left arrow-round'></i>",
-          "<i class='fa fa-angle-right arrow-round'></i>"
-          ]},
-        });
+    // SLAMR.owlCarousel({
+    //   '#owl-carousel-blog':{singleItem : true,
+    //     lazyLoad:true,
+    //     autoPlay : true},
+    //     '#owl-carousel-clients':{navigation: true,
+    //       navigationText: [
+    //       "<i class='fa fa-angle-left arrow-round'></i>",
+    //       "<i class='fa fa-angle-right arrow-round'></i>"
+    //       ]},
+    //       '#owl-carousel-testimonial':{singleItem:true,transitionStyle: "goDown",navigation: true,
+    //       navigationText: [
+    //       "<i class='fa fa-angle-left arrow-round'></i>",
+    //       "<i class='fa fa-angle-right arrow-round'></i>"
+    //       ]},
+    //     });
     SLAMR.bootstrapCarousel({
       '#carousel-head':{interval:5000,pause:false}
     });
