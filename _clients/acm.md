@@ -1,0 +1,3 @@
+---
+name: Auckland Coin Machines
+---

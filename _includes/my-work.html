@@ -39,6 +39,36 @@
 
         {% endfor %}
 
+      </div>
+
+      <div class="row cv">
+
+        <div class="col-lg-3 title">
+          <h3 class="headline-inline">Companies I've Worked With</h3>
+        </div>
+
+        {% for client in site.clients %}
+
+        <div class="cv-entry animated" data-animation-delay="100" data-animation="fadeInLeft">
+          <div class="col-lg-6 main {% unless forloop.first %}col-lg-offset-3{% endunless %}">
+            <h4>{{ client.name }}</h4>
+
+            <p class="desc">
+              <!-- {!{ client.description | markdownify }} -->
+            </p>
+            <hr>
+          </div>
+          <div class="col-lg-3 date">
+            <p>
+              <!-- <small><i class="fa fa-calendar-o"></i> {!{ client.date }}</small> -->
+            </p>
+          </div>
+        </div>
+
+        {% endfor %}
+
+      </div>
+
       </div><!--cv wrapper-->
     </div>
   </section>
