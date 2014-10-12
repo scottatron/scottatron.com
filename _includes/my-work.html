@@ -1,0 +1,44 @@
+<section id="my-work">
+  <div class="container">
+    <div class="row">
+      <div class="hero col-sm-6 col-sm-offset-3">
+        <h2>My Work</h2>
+        <div class="space"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="cv-wrapper">
+
+      <div class="row cv">
+
+        <div class="col-lg-3 title">
+          <h3 class="headline-inline">Projects of Note</h3>
+        </div>
+
+        {% for project in site.projects %}
+
+        <div class="cv-entry animated" data-animation-delay="100" data-animation="fadeInLeft">
+          <div class="col-lg-6 main {% unless forloop.first %}col-lg-offset-3{% endunless %}">
+            <h4>{{ project.title }}</h4>
+            {% if project.client %}
+            <i class="fa fa-building-o"></i> {{ project.client }}
+            {% endif %}
+
+            <p class="desc">
+              {{ project.description | markdownify }}
+            </p>
+            <hr>
+          </div>
+          <div class="col-lg-3 date">
+            <p>
+              <small><i class="fa fa-calendar-o"></i> {{ project.date }}</small>
+            </p>
+          </div>
+        </div>
+
+        {% endfor %}
+
+      </div><!--cv wrapper-->
+    </div>
+  </section>
