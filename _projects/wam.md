@@ -3,5 +3,7 @@ title: Warren & Mahoney
 client: Alt Group
 date: 2010-2014
 description: |
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium.
+  Worked on original build, doing CMS integration and performance improvments.
+
+  Recently built Ember.js component for generating tiles on homepage and integrating with Expression Engine CMS.
 ---

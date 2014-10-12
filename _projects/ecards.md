@@ -3,5 +3,7 @@ title: Gift Card System
 client: eCard Solutions
 date: 2008 - Present
 description: |
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Worked with databse vendor in Malaysia to expose web functionality for cardholders, merchants and program owners.
+
+  Broke up web infrastructure into service-oriented components with public and private REST APIs
 ---

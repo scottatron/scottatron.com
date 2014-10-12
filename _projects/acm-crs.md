@@ -3,7 +3,7 @@ title: Call Reporting System (CRS)
 client: Auckland Coin Machines
 date: 2011 - Present
 description: |
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Seemlessly integrated legacy PHP system + database with gradual migration to Rails.
 
-  Lorem Ipsum has been the one.
+  Increased test coverage from zero, to XX%
 ---
