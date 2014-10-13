@@ -6,23 +6,23 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+// $base-font-family: Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+// $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
 
-$on-palm:          600px;
-$on-laptop:        800px;
+// $on-palm:          600px;
+// $on-laptop:        800px;
 
 
 
@@ -42,8 +42,56 @@ $on-laptop:        800px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+// @import
+//         "base",
+//         "layout",
+//         "syntax-highlighting"
+// ;
+
+@include media-query(768px) {
+  #head .hero h1 {
+    font-size: 30px
+  }
+  #head .head-thumbBig {
+    margin-top: 0;
+  }
+  #head .head-thumbBig img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+.my-work .section-header {
+  text-transform: uppercase;
+  margin-top: 5px;
+  line-height: 1.4;
+
+  margin-bottom: 2em;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+.cv-wrapper .cv .main {
+  text-align: left;
+
+  h4 {
+    line-height: 1.4;
+  }
+}
+
+.my-work-entry {
+
+  .small-date {
+    padding: 0;
+  }
+
+  .desc {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+  }
+}

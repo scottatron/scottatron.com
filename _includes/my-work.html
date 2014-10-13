@@ -1,4 +1,4 @@
-<section id="my-work">
+<section id="my-work" class="my-work">
   <div class="container">
     <div class="row">
       <div class="hero col-sm-6 col-sm-offset-3">
@@ -13,24 +13,29 @@
       <div class="row cv">
 
         <div class="col-lg-3 title">
-          <h3 class="headline-inline">Projects of Note</h3>
+          <h3 class="headline-inline section-header">Projects of Note</h3>
         </div>
 
         {% for project in site.projects %}
 
-        <div class="cv-entry animated" data-animation-delay="100" data-animation="fadeInLeft">
+        <div class="my-work-entry cv-entry animated clearfix" data-animation-delay="100" data-animation="fadeInLeft">
           <div class="col-lg-6 main {% unless forloop.first %}col-lg-offset-3{% endunless %}">
             <h4>{{ project.title }}</h4>
             {% if project.client %}
             <i class="fa fa-building-o"></i> {{ project.client }}
             {% endif %}
+            <div class="col-lg-3 date small-date hidden-lg">
+              <p>
+                <small><i class="fa fa-calendar-o"></i> {{ project.date }}</small>
+              </p>
+            </div>
 
-            <p class="desc">
+
+            <div class="desc">
               {{ project.description | markdownify }}
-            </p>
-            <hr>
+            </div>
           </div>
-          <div class="col-lg-3 date">
+          <div class="col-lg-3 date visible-lg">
             <p>
               <small><i class="fa fa-calendar-o"></i> {{ project.date }}</small>
             </p>
@@ -44,19 +49,18 @@
       <div class="row cv">
 
         <div class="col-lg-3 title">
-          <h3 class="headline-inline">Companies I've Worked With</h3>
+          <h3 class="headline-inline section-header">Companies I've Worked With</h3>
         </div>
 
         {% for client in site.clients %}
 
-        <div class="cv-entry animated" data-animation-delay="100" data-animation="fadeInLeft">
+        <div class="my-work-entry cv-entry animated" data-animation-delay="100" data-animation="fadeInLeft">
           <div class="col-lg-6 main {% unless forloop.first %}col-lg-offset-3{% endunless %}">
             <h4>{{ client.name }}</h4>
 
-            <p class="desc">
+            <div class="desc">
               <!-- {!{ client.description | markdownify }} -->
-            </p>
-            <hr>
+            </div>
           </div>
           <div class="col-lg-3 date">
             <p>
