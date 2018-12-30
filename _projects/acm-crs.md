@@ -3,7 +3,7 @@ title: Call Reporting System (CRS)
 client: Auckland Coin Machines
 date_active: 2011 - Present
 description: |
-  Seemlessly integrated legacy PHP system + database with gradual migration to Rails.
+  Seamlessly integrated legacy PHP system + database with gradual migration to Ruby on Rails.
 
-  Increased test coverage from zero, to over 90%.
+  Increased test coverage from zero to over 90%.
 ---
