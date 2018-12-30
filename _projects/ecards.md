@@ -1,7 +1,7 @@
 ---
 title: Gift Card System
 client: eCard Solutions
-date: 2008 - Present
+date_active: 2008 - Present
 description: |
   Worked with databse vendor in Malaysia to expose web functionality for cardholders, merchants and program owners.
 

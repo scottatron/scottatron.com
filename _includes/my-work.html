@@ -11,6 +11,40 @@
     <div class="cv-wrapper">
 
       <div class="row cv">
+        <div class="col-lg-3 title">
+          <h3 class="headline-inline section-header">My Roles</h3>
+        </div>
+
+        {% for role in site.roles %}
+
+        <div class="my-work-entry cv-entry animated clearfix" data-animation-delay="100" data-animation="fadeInLeft">
+          <div class="col-lg-6 main {% unless forloop.first %}col-lg-offset-3{% endunless %}">
+            <h4>{{ role.title }}</h4>
+            {% if role.company %}
+            <i class="fa fa-building-o"></i> {{ role.company }}
+            {% endif %}
+            <div class="col-lg-3 date small-date hidden-lg">
+              <p>
+                <small><i class="fa fa-calendar-o"></i> {{ role.date_active }}</small>
+              </p>
+            </div>
+
+
+            <div class="desc">
+              {{ role.description | markdownify }}
+            </div>
+          </div>
+          <div class="col-lg-3 date visible-lg">
+            <p>
+              <small><i class="fa fa-calendar-o"></i> {{ role.date_active }}</small>
+            </p>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+
+      <div class="row cv" id="projects-of-note">
 
         <div class="col-lg-3 title">
           <h3 class="headline-inline section-header">Projects of Note</h3>
@@ -26,7 +60,7 @@
             {% endif %}
             <div class="col-lg-3 date small-date hidden-lg">
               <p>
-                <small><i class="fa fa-calendar-o"></i> {{ project.date }}</small>
+                <small><i class="fa fa-calendar-o"></i> {{ project.date_active }}</small>
               </p>
             </div>
 
@@ -37,7 +71,7 @@
           </div>
           <div class="col-lg-3 date visible-lg">
             <p>
-              <small><i class="fa fa-calendar-o"></i> {{ project.date }}</small>
+              <small><i class="fa fa-calendar-o"></i> {{ project.date_active }}</small>
             </p>
           </div>
         </div>
@@ -46,7 +80,7 @@
 
       </div>
 
-      <div class="row cv">
+      <div class="row cv" id="companies-ive-worked-with">
 
         <div class="col-lg-3 title">
           <h3 class="headline-inline section-header">Companies I've Worked With</h3>
