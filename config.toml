@@ -1,4 +1,7 @@
 # baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'Scott Arthur'
+title = 'Scottatron.com'
 theme = 'scottatron-2021'
+
+[permalinks]
+links = "/links/:year/:month/:day/:title"

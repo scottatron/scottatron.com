@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="prose m-8 sm:m-24">
+
+  <article class="link border-b pb-3 mb-6">
+    <h2>
+      <a href="{{ .Params.link }}" class="link uppercase text-base font-semibold border-b">{{ .Title }}</a>
+    </h2>
+
+    {{ .Content }}
+  </article>
+
+</section>
+{{ end }}

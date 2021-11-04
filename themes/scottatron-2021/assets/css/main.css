@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.prose .link h2 .link {
+  @apply no-underline;
+  @apply font-bold;
+}
+.prose .link h2 .permalink {
+  @apply no-underline;
+}
