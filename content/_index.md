@@ -37,11 +37,11 @@ I'm a strong advocate for **Test-Driven Development (TDD)** as I believe it real
 
 I'm a huge advocate of infrastructure automation and infrastructure as code. I've worked extensivley with **Puppet**, **Ansible**, and **Terraform** to automate infrastructure on-premise (**VMware** and bare-metal) as well as in the cloud (**AWS**).
 
-While I don't believe that the term 'GitOps' that has recently gained some popularity is defining a new concept, I do love that it succintly describes an approach to operating infrastructure and applications that is driven through source control. This is something I believe is extra important on top of core automation practices to ensure good audit-trails and promote declarative and idempotent changes.
+While I don't believe that the recently popularised term "GitOps" is defining a new concept, I do love that it succintly describes an approach to operating infrastructure and applications that is driven through source control. This is something I believe is extra important on top of core automation practices to ensure good audit-trails and promote declarative and idempotent changes.
 
 ### Containers
 
-I've been immersed in the use of **Linux containers** since I started using them in 2013 and have been a huge advocate for their adoption at IOOF. We initially started working with **Docker** directly for our container platform, however I strongly advocated for our move to **Kubernetes** once it had reached a level of maturity and adoption that made sense for us.
+I've been immersed in the use of **Linux containers** since I started using them in 2013 and have been a champion for their adoption at IOOF. We initially started working with **Docker** directly for our container platform, however I strongly advocated for our move to **Kubernetes** once it had reached a level of maturity and adoption that made sense for us.
 
 ### Systems Administration
 
@@ -69,9 +69,10 @@ During this time, I have continued to be involved in hands-on technical leadersh
 
 Notable work that has been completed under my leadership includes:
 
-- Migrating the core of our internal container platform to Kubernetes (Rancher, on-premises). This involved keeping the existing developer experience largely the same, while replacing the core of the platform. We devleoped some simple CRDs that helped deploy and operate our internal representation of an environment.
-- Initial phase of increasing our AWS adoption in preparation for the merger with MLC.
-  This involves building out a multi-account organisation structure with guard rails and best-practices to satisfy stringent compliance and security requirements.
+- **Migrating the core of our internal container platform to Kubernetes—deployed on-premise using Rancher.**  
+  This involved keeping the existing developer experience largely the same, while replacing the core of the platform. We devleoped some simple CRDs that helped deploy and operate our internal representation of an environment.
+- **Initial phase of increasing our AWS adoption in preparation on-boarding workloads that are part of the merger with MLC.**   
+  This involves building out a multi-account organisation structure with guard rails and best-practices to satisfy stringent compliance and security requirements while still providing as much autonomy to application teams to operate the environments in the way that works for them.
 
 ### 2014-2018 — IOOF — Infrastructure Programmer
 
