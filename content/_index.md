@@ -27,11 +27,11 @@ https://www.linkedin.com/in/scott-arthur-4a969076
 
 I'm a confident **Ruby** developer and it is the language that I'm most fluent in. I love Ruby's expressiveness and the friendly nature of the community around the language.
 
-While I'm most comfortable working with Ruby, I've also been working with **Go** a fair bit since starting at IOOF. I really enjoy using Go for it's simplicity and excellent toolchain. I firmly believe that learning Go has also made me a better Ruby developer as it's helped me think about the potential for loosely-defined or undefined behaviour in dynamic code that can lead to subtle bugs.
+While I'm most comfortable working with Ruby, I've also been working with **Go** since starting at IOOF. I really enjoy using Go for it's simplicity and excellent toolchain. I firmly believe that learning Go has also made me a better Ruby developer as it's helped me think about the potential for loosely-defined or undefined behaviour in dynamic code that can lead to subtle bugs.
 
-I've worked with other languages at times, including **Python**, **PHP**, **Javascript** and would generally be comfortable picking up many other languages to work with if required.
+I've worked with other languages at times, including **Python**, **PHP**, **Javascript** and am confident in my ability to pick up other languages to work with if required.
 
-I'm a strong advocate for **Test-Driven Development (TDD)** as I believe it really helps inform the design of your code just as much as it provides assurances that the code is correct.
+I'm a strong believer in the effectiveness **Test-Driven Development (TDD)** to help inform the design of your code as well as providing assurances that the code is correct.
 
 ### Infrastructure Automation
 
@@ -47,7 +47,7 @@ I've been immersed in the use of **Linux containers** since I started using them
 
 I'm a confident **Linux** systems administrator and have worked with **RHEL**, **Debian**, and **Ubuntu** in production systems over the years.
 
-While I'm most comfortable on Linux, I am no stranger to **Windows** and have done a fair amount of work in Windows automation in the years I've worked at IOOF.
+While I'm most comfortable on Linux, I am no stranger to **Windows** and have worked with Windows Server automation in the years I've worked at IOOF.
 
 ### DevOps, Agile, CI/CD
 
@@ -55,7 +55,7 @@ While **DevOps**, **Agile** and **CI/CD** can often be very overloaded terms the
 
 The strong feedback loops that are core to these ideas are critical to delivering software and systems reliably and efficiently.
 
-The "people over process" part of the Agile manifesto and the "breaking down silos" idea from DevOps are things that resonate with me and really inform how I work.
+The "people over process" part of the Agile manifesto and the "breaking down silos" idea from DevOps are concepts that resonate with me and really inform how I work.
 
 ---
 
@@ -70,7 +70,7 @@ During this time, I have continued to be involved in hands-on technical leadersh
 Notable work that has been completed under my leadership includes:
 
 - **Migrating the core of our internal container platform to Kubernetes—deployed on-premise using Rancher.**  
-  This involved keeping the existing developer experience largely the same, while replacing the core of the platform. We devleoped some simple CRDs that helped deploy and operate our internal representation of an environment.
+  This involved keeping the existing developer experience largely the same, while replacing the core of the platform. We developed some simple CRDs that helped deploy and operate our internal representation of an environment.
 - **Initial phase of increasing our AWS adoption in preparation on-boarding workloads that are part of the merger with MLC.**   
   This involves building out a multi-account organisation structure with guard rails and best-practices to satisfy stringent compliance and security requirements while still providing as much autonomy to application teams to operate the environments in the way that works for them.
 
