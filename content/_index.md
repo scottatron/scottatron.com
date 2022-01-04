@@ -16,7 +16,7 @@ I take pride in my ability to think about user-experience in everything I build,
 +61428911882  
 scott@scottatron.com  
 [twitter.com/scottatron](https://twitter.com/scottatron)  
-[github.com/scottatron](https://github.com/scottatron.com)  
+[github.com/scottatron](https://github.com/scottatron)  
 [linkedin.com/in/scottatron](https://www.linkedin.com/in/scottatron)
 
 ---
