@@ -61,7 +61,7 @@ The "people over process" part of the Agile manifesto and the "breaking down sil
 
 ## Experience
 
-### 2018-Present — IOOF — Platform Infrastructure Team Lead
+### 2018-2021 — IOOF — Platform Infrastructure Team Lead
 
 In 2018 I was given the opportunity to take over the leadership role for my team at IOOF. 
 
