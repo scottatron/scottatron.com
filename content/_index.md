@@ -41,7 +41,7 @@ While I don't believe that the recently popularised term "GitOps" is defining a 
 
 ### Containers
 
-I've been immersed in the use of **Linux containers** since I started using them in 2013 and have been a champion for their adoption at IOOF. We initially started working with **Docker** directly for our container platform, however I strongly advocated for our move to **Kubernetes** once it had reached a level of maturity and adoption that made sense for us.
+I've been immersed in the use of **Linux containers** since I started using them in 2013 and was a champion for their adoption at IOOF. We initially started working with **Docker** directly for our container platform, however I strongly advocated for our move to **Kubernetes** once it had reached a level of maturity and adoption that made sense for us.
 
 ### Systems Administration
 
@@ -61,9 +61,15 @@ The "people over process" part of the Agile manifesto and the "breaking down sil
 
 ## Experience
 
+### 2022-Present — LimePoint — Senior Software Engineer
+
+In early 2022, I started a new role as a sofware engineer at LimePoint, working on the [OpsChain](https://opschain.io) product.
+
+This work involves working with Ruby on Rails, as well a heavy use of Linux containers and Kubernetes.
+
 ### 2018-2021 — IOOF — Platform Infrastructure Team Lead
 
-In 2018 I was given the opportunity to take over the leadership role for my team at IOOF. 
+In 2018 I was given the opportunity to take over the leadership role for my team at IOOF.
 
 During this time, I have continued to be involved in hands-on technical leadership within the team, while also developing my skills in team management, team roadmap planning, stakeholder communication, and vendor management.
 
