@@ -13,11 +13,12 @@ I take pride in my ability to think about user-experience in everything I build,
 
 ### Contact Me
 
-+61428911882  
-scott@scottatron.com  
-[twitter.com/scottatron](https://twitter.com/scottatron)  
-[github.com/scottatron](https://github.com/scottatron)  
++61428911882
+scott@scottatron.com
+[twitter.com/scottatron](https://twitter.com/scottatron)
+[github.com/scottatron](https://github.com/scottatron)
 [linkedin.com/in/scottatron](https://www.linkedin.com/in/scottatron)
+{{< mastodon-link >}}
 
 ---
 
