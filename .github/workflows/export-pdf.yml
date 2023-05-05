@@ -14,9 +14,6 @@ jobs:
       - name: Set version
         run: echo "version=$(git log -1 --date=format:%Y-%m-%d --pretty=format:%cd-%h)" >> $GITHUB_ENV
 
-      - name: Start screencapture
-        run: screencapture -T0 -V30 screen.mov
-
       - name: Export webpage as PDF
         id: applescript
         run: |
