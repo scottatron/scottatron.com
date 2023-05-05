@@ -11,4 +11,4 @@ version:
 	@echo "Scott-Arthur-CV-$(VERSION)" | tee /dev/tty | tr -d "\n" | pbcopy
 
 deployed:
-	[[ "$$((curl -fs https://www.scottatron.com/.well-known/build.json || echo '{"version": "$(VERSION)"}') | jq -r '.version')" == "$(VERSION)" ]]
+	[ "$$((curl -fs https://www.scottatron.com/.well-known/build.json || echo '{"version": "$(VERSION)"}') | jq -r '.version')" = "$(VERSION)" ]
