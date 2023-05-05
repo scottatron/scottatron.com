@@ -18,7 +18,7 @@ jobs:
       - name: Wait until Netlify has deployed
         if: ${{ github.ref_name == 'main' }}
         run: |
-          until $(make deployed)
+          until make deployed
           do
             echo "Waiting for Netlify to deploy..."
             sleep 1

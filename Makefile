@@ -13,4 +13,4 @@ version:
 BUILD_INFO = $(shell (curl -fs https://www.scottatron.com/.well-known/build.json || echo '{"version": ""}') | jq -r .version)
 deployed:
 	@echo $(BUILD_INFO)
-	@[ "$(BUILD_INFO)" == "$(VERSION)" ]
+	@[[ "$(BUILD_INFO)" == "$(VERSION)" ]]
