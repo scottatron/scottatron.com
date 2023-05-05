@@ -10,5 +10,7 @@ build:
 version:
 	@echo "Scott-Arthur-CV-$(VERSION)" | tee /dev/tty | tr -d "\n" | pbcopy
 
+BUILD_INFO = $(shell (curl -fs https://www.scottatron.com/.well-known/build.json || echo '{"version": ""}') | jq -r .version)
 deployed:
-	[ "$$((curl -fs https://www.scottatron.com/.well-known/build.json || echo '{"version": "$(VERSION)"}') | jq -r '.version')" = "$(VERSION)" ]
+	@echo $(BUILD_INFO)
+	@[ "$(BUILD_INFO)" == "$(VERSION)" ]
