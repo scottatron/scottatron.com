@@ -52,13 +52,13 @@ jobs:
           osascript safari_export_pdf.scpt
 
       - run: screencapture screen.png
-        if: failed()
+        if: ${{ failure() }}
 
       - uses: actions/upload-artifact@v2
         with:
           name: screen
           path: screen.png
-        if: steps.applescript.outcome != success
+        if: ${{ steps.applescript.outcome != success }}
 
       - name: Upload PDF as artifact
         uses: actions/upload-artifact@v2
