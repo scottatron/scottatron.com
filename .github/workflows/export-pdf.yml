@@ -18,6 +18,7 @@ jobs:
         run: screencapture -T0 -V30 screen.mov
 
       - name: Export webpage as PDF
+        id: applescript
         run: |
           cat > safari_export_pdf.scpt <<-EOF
           tell application "Safari"
@@ -50,12 +51,14 @@ jobs:
           EOF
           osascript safari_export_pdf.scpt
 
-      - name: Upload screen.mov if script failed
-        if: failure()
-        uses: actions/upload-artifact@v2
+      - run: screencapture screen.png
+        if: failed()
+
+      - uses: actions/upload-artifact@v2
         with:
-          name: screencapture
-          path: screen.mov
+          name: screen
+          path: screen.png
+        if: steps.applescript.outcome != success
 
       - name: Upload PDF as artifact
         uses: actions/upload-artifact@v2
