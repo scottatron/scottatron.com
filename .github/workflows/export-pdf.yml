@@ -85,4 +85,5 @@ jobs:
         with:
           artifacts: "*.pdf"
           tag: ${{ env.version }}
+          makeLatest: true
         if: ${{ github.ref == 'refs/heads/main' }}
