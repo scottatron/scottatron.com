@@ -58,7 +58,7 @@ jobs:
         with:
           name: screen
           path: screen.png
-        if: ${{ steps.applescript.outcome != success }}
+        if: ${{ steps.applescript.outcome != 'success' }}
 
       - name: Upload PDF as artifact
         uses: actions/upload-artifact@v2
