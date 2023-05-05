@@ -15,6 +15,15 @@ jobs:
       - name: Set version
         run: echo "version=$(git log -1 --date=format:%Y-%m-%d --pretty=format:%cd-%h)" >> $GITHUB_ENV
 
+      - name: Wait until Netlify has deployed
+        if: ${{ github.ref_name == 'main' }}
+        run: |
+          until $(make deployed)
+          do
+            echo "Waiting for Netlify to deploy..."
+            sleep 1
+          done
+
       - name: Allow bash to control Safari
         run: |
           epochdate=$(($(date +'%s * 1000 + %-N / 1000000')))
