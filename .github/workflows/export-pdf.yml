@@ -13,18 +13,21 @@ jobs:
 
     - name: Export webpage as PDF
       run: |
-        echo "tell application \"Safari\"" > safari_export_pdf.scpt
-        echo "  activate" >> safari_export_pdf.scpt
-        echo "  set theURL to \"https://www.scottatron.com\"" >> safari_export_pdf.scpt
-        echo "  set theFile to (\"${PWD}/output.pdf\") as POSIX file" >> safari_export_pdf.scpt
-        echo "  make new document with properties {URL:theURL}" >> safari_export_pdf.scpt
-        echo "  delay 5" >> safari_export_pdf.scpt
-        echo "  set the bounds of the front window to {0, 0, 960, 1080}" >> safari_export_pdf.scpt
-        echo "  delay 2" >> safari_export_pdf.scpt
-        echo "  export the front document to theFile as PDF" >> safari_export_pdf.scpt
-        echo "  close the front document" >> safari_export_pdf.scpt
-        echo "end tell" >> safari_export_pdf.scpt
+        cat > safari_export_pdf.scpt <<-EOF
+        tell application "Safari"
+          activate
+          set theURL to "https://www.scottatron.com"
+          set theFile to ("${PWD}/output.pdf") as POSIX file
+          make new document with properties {URL:theURL}
+          delay 5
+          set the bounds of the front window to {0, 0, 960, 1080}
+          delay 2
+          export the front document to theFile as PDF
+          close the front document
+        end tell
+        EOF
         osascript safari_export_pdf.scpt
+
 
     - name: Upload PDF as artifact
       uses: actions/upload-artifact@v2
