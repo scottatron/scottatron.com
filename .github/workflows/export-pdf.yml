@@ -8,29 +8,47 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Export webpage as PDF
-      run: |
-        cat > safari_export_pdf.scpt <<-EOF
-        tell application "Safari"
-          activate
-          set theURL to "https://www.scottatron.com"
-          set theFile to ("${PWD}/output.pdf") as POSIX file
-          make new document with properties {URL:theURL}
-          delay 5
-          set the bounds of the front window to {0, 0, 960, 1080}
-          delay 2
-          export the front document to theFile as PDF
-          close the front document
-        end tell
-        EOF
-        osascript safari_export_pdf.scpt
+      - name: Set version
+        run: echo "version=$(git log -1 --date=format:%Y-%m-%d --pretty=format:%cd-%h)" >> $GITHUB_ENV
 
+      - name: Export webpage as PDF
+        run: |
+          cat > safari_export_pdf.scpt <<-EOF
+          tell application "Safari"
+            activate
+            set theURL to "https://www.scottatron.com"
+            make new document with properties {URL:theURL}
+            delay 0.5
+          end tell
 
-    - name: Upload PDF as artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: output
-        path: output.pdf
+          tell application "System Events"
+            tell process "Safari"
+              set frontmost to true
+              set size of window 1 to {960, 1080}
+              delay 0.5
+              click menu item "Export as PDF…" of menu "File" of menu bar 1
+              repeat until exists sheet 1 of window 1
+                delay 0.02
+              end repeat
+              keystroke "h" using {command down, shift down} -- go to the home directory
+              set theFile to "${PWD}/Scott-Arthur-CV-${{ env.version }}.pdf"
+              set value of text field 1 of sheet 1 of window 1 to theFile
+              click button "Save" of sheet 1 of window 1
+              delay 0.5
+            end tell
+          end tell
+
+          tell application "Safari"
+            close the front document
+          end tell
+          EOF
+          osascript safari_export_pdf.scpt
+
+      - name: Upload PDF as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: output
+          path: Scott-Arthur-PDF-${{ env.version }}.pdf
