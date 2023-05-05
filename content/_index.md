@@ -3,7 +3,7 @@ title: Hi, I'm Scott Arthur
 draft: false
 ---
 
-## Hi, I'm **Scott Arthur**. 
+## Hi, I'm **Scott Arthur**.
 
 I like to call myself a **technologist** because I love to solve problems with technology. I have a strong background in web and software development as well as infrastructure and systems administration.
 
@@ -66,7 +66,7 @@ The "people over process" part of the Agile manifesto and the "breaking down sil
 
 In early 2022, I started a new role as a sofware engineer at LimePoint, working on the [OpsChain](https://opschain.io) product.
 
-This work involves working with Ruby on Rails, as well a heavy use of Linux containers and Kubernetes.
+This work involves working with Ruby on Rails, as well a heavy use of Linux containers and Kubernetes. Recently, this work has also involved web frontend development with Typescript and React.
 
 ### 2018-2021 — IOOF — Platform Infrastructure Team Lead
 
