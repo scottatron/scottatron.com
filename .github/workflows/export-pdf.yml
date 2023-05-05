@@ -1,0 +1,33 @@
+name: Export PDF
+
+on:
+  workflow_dispatch:
+
+jobs:
+  export_pdf:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Export webpage as PDF
+      run: |
+        echo "tell application \"Safari\"" > safari_export_pdf.scpt
+        echo "  activate" >> safari_export_pdf.scpt
+        echo "  set theURL to \"https://www.scottatron.com\"" >> safari_export_pdf.scpt
+        echo "  set theFile to (\"${PWD}/output.pdf\") as POSIX file" >> safari_export_pdf.scpt
+        echo "  make new document with properties {URL:theURL}" >> safari_export_pdf.scpt
+        echo "  delay 5" >> safari_export_pdf.scpt
+        echo "  set the bounds of the front window to {0, 0, 960, 1080}" >> safari_export_pdf.scpt
+        echo "  delay 2" >> safari_export_pdf.scpt
+        echo "  export the front document to theFile as PDF" >> safari_export_pdf.scpt
+        echo "  close the front document" >> safari_export_pdf.scpt
+        echo "end tell" >> safari_export_pdf.scpt
+        osascript safari_export_pdf.scpt
+
+    - name: Upload PDF as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: output
+        path: output.pdf
