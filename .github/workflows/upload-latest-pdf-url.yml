@@ -24,14 +24,9 @@ jobs:
             const pdfAsset = assets.find(asset => asset.name.endsWith('.pdf'));
             return pdfAsset.browser_download_url;
 
-      - name: Update PDF URL
+      - name: Update Netlify environment variable
         run: |
-          echo '{ "url": "${{ steps.get_info.outputs.result }}" }' > ./public/pdf-url.json
-        shell: bash
-
-      - name: Commit and push
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add ./public/pdf-url.json
-          git commit -m "Update PDF URL" && git push
+          curl -X POST "https://api.netlify.com/api/v1/sites/YOUR_SITE_ID/env" \
+          -H "Content-Type: application/json" \
+          -H "Authorization: Bearer ${{ secrets.NETLIFY_TOKEN }}" \
+          -d '{ "key": "PDF_URL", "value": "${{ steps.get_info.outputs.result }}" }'

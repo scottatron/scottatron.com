@@ -1,9 +1,5 @@
-const fs = require('fs');
-const path = require('path');
-
 exports.handler = async function(event, context) {
-  const data = fs.readFileSync(path.join(__dirname, '../public/pdf-url.json'), 'utf8');
-  const { url } = JSON.parse(data);
+  const url = process.env.PDF_URL;
 
   return {
     statusCode: 302,
