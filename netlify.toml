@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/CV.pdf"
+  to = "/.netlify/functions/redirect"
+  status = 302

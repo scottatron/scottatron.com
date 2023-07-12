@@ -1,0 +1,37 @@
+name: Update Latest PDF URL
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  update_url:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Get latest release info
+        id: get_info
+        uses: actions/github-script@v5
+        with:
+          script: |
+            const { data: { assets } } = await github.rest.repos.getReleaseByTag({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag: context.ref.replace('refs/tags/', '')
+            });
+            const pdfAsset = assets.find(asset => asset.name.endsWith('.pdf'));
+            return pdfAsset.browser_download_url;
+
+      - name: Update PDF URL
+        run: |
+          echo '{ "url": "${{ steps.get_info.outputs.result }}" }' > ./public/pdf-url.json
+        shell: bash
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add ./public/pdf-url.json
+          git commit -m "Update PDF URL" && git push
