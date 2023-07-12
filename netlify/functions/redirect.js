@@ -1,5 +1,10 @@
+const fs = require('fs')
+const path = require('path')
+
 exports.handler = async function(event, context) {
-  const url = process.env.PDF_URL;
+  const buildInfo = fs.readFileSync(path.join(__dirname, '../public/.well-known/build.json'), 'utf-8')
+  const {version} = JSON.parse(buildInfo)
+  const url = `https://github.com/scottatron/scottatron.com/releases/download/${version}/Scott-Arthur-CV-${version}.pdf`
 
   return {
     statusCode: 302,
