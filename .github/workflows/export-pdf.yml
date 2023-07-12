@@ -86,4 +86,5 @@ jobs:
           artifacts: "*.pdf"
           tag: ${{ env.version }}
           makeLatest: true
+          token: ${{ secrets.RELEASE_TOKEN }}
         if: ${{ github.ref == 'refs/heads/main' }}
