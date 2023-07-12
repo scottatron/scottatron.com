@@ -5,7 +5,7 @@ draft: false
 
 ## Hi, I'm **Scott Arthur**.
 
-I like to call myself a **technologist** because I love to solve problems with technology. I have a strong background in web and software development as well as infrastructure and systems administration.
+As someone who likes to consider themselves a **technologist** above all else, I thrive on solving problems with technology. I have a strong background in web and software development as well as infrastructure and systems administration.
 
 I really enjoy talking to people about the problems they're trying to solve and figuring out an iterative approach to solving them. Sometimes it requires a complex technology solution, but sometimes a simple, pragmatic solution is the answer.
 
