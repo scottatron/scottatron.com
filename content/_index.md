@@ -7,7 +7,7 @@ draft: false
 
 As someone who likes to consider themselves a **technologist** above all else, I thrive on solving problems with technology. I have a strong background in web and software development as well as infrastructure and systems administration.
 
-I really enjoy talking to people about the problems they're trying to solve and figuring out an iterative approach to solving them. Sometimes it requires a complex technology solution, but sometimes a simple, pragmatic solution is the answer.
+Engaging with people to understand the challenges they're facing, and devising an iterative approach to solve them, is my favourite part of what I do. Sometimes this involves a complex technological strategy, but often a simple, pragmatic approach can be just as effective.
 
 I take pride in my ability to think about user-experience in everything I build, whether the end-user is a less technical person or a highly-skilled developer. I believe we all enjoy working with tools and systems that don't contribute to cognitive overload and get out of our way as much as possible.
 
