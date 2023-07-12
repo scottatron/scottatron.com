@@ -14,10 +14,10 @@ I take pride in my ability to think about user-experience in everything I build,
 ### Contact Me
 
 +61428911882  
-scott@scottatron.com  
-[twitter.com/scottatron](https://twitter.com/scottatron)  
+scott@scottatron.com 
 [github.com/scottatron](https://github.com/scottatron)  
 [linkedin.com/in/scottatron](https://www.linkedin.com/in/scottatron)  
+[twitter.com/scottatron](https://twitter.com/scottatron)  
 {{< mastodon-link >}}
 
 ---
@@ -42,7 +42,7 @@ While I don't believe that the recently popularised term "GitOps" is defining a 
 
 ### Containers
 
-I've been immersed in the use of **Linux containers** since I started using them in 2013 and was a champion for their adoption at IOOF. We initially started working with **Docker** directly for our container platform, however I strongly advocated for our move to **Kubernetes** once it had reached a level of maturity and adoption that made sense for us.
+My immersion in the use of Linux containers began in 2013 and I was a champion for their adoption at IOOF. We initially started working with **Docker** directly for our container platform, however I strongly advocated for our move to **Kubernetes** once it had reached a level of maturity and adoption that made sense for us.
 
 ### Systems Administration
 
@@ -52,11 +52,21 @@ While I'm most comfortable on Linux, I am no stranger to **Windows** and have wo
 
 ### DevOps, Agile, CI/CD
 
-While **DevOps**, **Agile** and **CI/CD** can often be very overloaded terms these days, I still believe there are core principles within each of these areas that are very useful.
+Despite the frequent overloading of terms like **DevOps**, **Agile**, and **CI/CD** these days, I still believe there are core principles within each of these areas that are very useful.
 
 The strong feedback loops that are core to these ideas are critical to delivering software and systems reliably and efficiently.
 
 The "people over process" part of the Agile manifesto and the "breaking down silos" idea from DevOps are concepts that resonate with me and really inform how I work.
+
+## Observability
+
+In my experience, observability is more than a buzzword—it's a critical part of the software delivery lifecycle. It's not just about gathering data, but transforming that data into **actionable insights**.
+
+Observability has been key in my work, closing the feedback loops and guiding my decisions. It's been instrumental in tracking user journeys and meeting critical business service-level objectives.
+
+I've had the opportunity to work with a range of tools, including the **Elastic** platform, **Splunk**, **New Relic**, **Prometheus**, and **Grafana**. But it's not just about the tools—it's about how we use them to understand our systems, spot patterns, and make data-driven decisions that boost software quality and user satisfaction.
+
+To me, observability is about proactively maintaining the health and performance of our software, ensuring it performs optimally under real-world conditions, and constantly striving for improvement.
 
 ---
 
@@ -64,9 +74,11 @@ The "people over process" part of the Agile manifesto and the "breaking down sil
 
 ### 2022-Present — LimePoint — Senior Software Engineer
 
-In early 2022, I started a new role as a sofware engineer at LimePoint, working on the [OpsChain](https://opschain.io) product.
+Since early 2022, I've been working as a software engineer at LimePoint, contributing to the [OpsChain](https://opschain.io) product.
 
 This work involves working with Ruby on Rails, as well a heavy use of Linux containers and Kubernetes. Recently, this work has also involved web frontend development with Typescript and React.
+
+During my time at LimePoint, I've also been working on my **product management** skills—helping to focus the goals of the product and ensure we're delivering a cohesive and attractive solution to our potential users.
 
 ### 2018-2021 — IOOF — Platform Infrastructure Team Lead
 
@@ -85,7 +97,7 @@ Notable work that has been completed under my leadership includes:
 
 During my initial 4 years at IOOF, I developed my skills in infrastructure automation and software delivery tools, while contributing to our team's efforts to make it easy for software delivery teams to efficiently deliver their software for the business.
 
-While I have been involved in all aspects of our team's infrastructure automation work, I have given particular focus to our internal platform-as-a-service and the underlying Linux container ecosystem it is based on.
+While I have been involved in all aspects of our team's infrastructure automation work, I have given particular focus to our internal platform-as-a-service and the underlying Linux container ecosystem it is based on. This platform strived to provide all the the tools & techniniques our delivery teams need to effciently deploy, operate, and observe their applications.
 
 I was often in the de-facto technical lead position within the team, providing technical leadership, as well as mentoring less experienced members of the team.
 
