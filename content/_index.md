@@ -58,7 +58,7 @@ The strong feedback loops that are core to these ideas are critical to deliverin
 
 The "people over process" part of the Agile manifesto and the "breaking down silos" idea from DevOps are concepts that resonate with me and really inform how I work.
 
-## Observability
+### Observability
 
 In my experience, observability is more than a buzzword—it's a critical part of the software delivery lifecycle. It's not just about gathering data, but transforming that data into **actionable insights**.
 
