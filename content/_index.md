@@ -5,15 +5,17 @@ draft: false
 
 ## Hi, I'm **Scott Arthur**.
 
-As someone who likes to consider themselves a **technologist** above all else, I thrive on solving problems with technology. I have a strong background in web and software development as well as infrastructure and systems administration.
+I'm a **Staff SRE, software engineer, and AI-augmented platform technologist** who likes solving messy problems where software, infrastructure, reliability, developer experience, and people all meet.
+
+My background spans web and software development, infrastructure automation, cloud platforms, Kubernetes, CI/CD, observability, and systems administration. Recently, my work has increasingly focused on **agentic engineering**: using LLMs, coding agents, structured context, and automation to improve how engineers build, review, support, and operate software.
 
 Engaging with people to understand the challenges they're facing, and devising an iterative approach to solve them, is my favourite part of what I do. Sometimes this involves a complex technological strategy, but often a simple, pragmatic approach can be just as effective.
 
-I take pride in my ability to think about user-experience in everything I build, whether the end-user is a less technical person or a highly-skilled developer. I believe we all enjoy working with tools and systems that don't contribute to cognitive overload and get out of our way as much as possible.
+I take pride in thinking about user experience in everything I build, whether the end-user is a customer, a less technical stakeholder, or a highly skilled developer. I believe we all enjoy working with tools and systems that reduce cognitive load, make feedback loops clear, and get out of our way as much as possible.
 
 ### Contact Me
 
-+61428911882  
++614****1882  
 scott@scottatron.com  
 [github.com/scottatron](https://github.com/scottatron)  
 [linkedin.com/in/scottatron](https://www.linkedin.com/in/scottatron)  
@@ -24,82 +26,116 @@ scott@scottatron.com
 
 ## Skills
 
+### AI Engineering & Agentic Systems
+
+I work hands-on with LLMs, coding agents, and AI-augmented engineering workflows. My recent work includes building and operating personal and work-adjacent agent systems, evaluating agent frameworks and MCP-style tool integrations, using AI agents for code review and delivery support, and designing workflows where scripted capture, durable memory, and reasoning agents each have clear responsibilities.
+
+I'm especially interested in the production shape of AI systems: evaluation, observability, privacy boundaries, prompt and context management, tool permissions, human-in-the-loop control, and the operational patterns needed to make AI useful without making systems opaque.
+
+### LLMOps & AI Operationalisation
+
+My SRE and observability background gives me a practical lens on LLMOps. For AI systems, a successful request is not just a 200 response: it also needs to be grounded, useful, safe, cost-aware, and auditable. I think about AI services in terms of quality signals, evaluation loops, traces, cost controls, user trust, and the handoff points where a human needs to come back into the loop.
+
+### Staff SRE / Platform Engineering
+
+At Wesfarmers OneDigital, I focus on whatever is creating the most operational noise: helping teams understand their applications, performance, operations, and failure modes. This includes observability strategy, SLOs, incident response, cloud migration, CI/CD, platform support, and connecting reliability work to customer and business outcomes across OnePass, OneData, and the broader Wesfarmers retail ecosystem.
+
+### Technical Communication, Storytelling & Enablement
+
+I have recently been developing a stronger public and internal technical communication practice. At OneDigital, this has included Engineering Community Talks, Klaxon Therapy / on-call workshops, Platform KT sessions, Agentic Coding Working Group contributions, and the Agentic Engineering All-In Day, where I presented on agentic code reviews and AWS/GCP platform guidance.
+
+Externally, I spoke on the Datadog Live Melbourne panel about observability, SLOs, customer journeys, signal-vs-noise-vs-cost trade-offs, and how observability needs to evolve for AI and LLM systems. That speaking work reflects the kind of enablement I value: not just building patterns, but explaining them clearly enough that other teams can adopt them safely.
+
 ### Software Development
 
 I'm a confident **Ruby** developer and it is the language that I'm most fluent in. I love Ruby's expressiveness and the friendly nature of the community around the language.
 
-While I'm most comfortable working with Ruby, I've also been working with **Go** since starting at IOOF. I really enjoy using Go for it's simplicity and excellent toolchain. I firmly believe that learning Go has also made me a better Ruby developer as it's helped me think about the potential for loosely-defined or undefined behaviour in dynamic code that can lead to subtle bugs.
+I've also worked with **Go**, **Python**, **PHP**, **JavaScript**, and **TypeScript**, and am confident in my ability to pick up other languages as required. I value simple, maintainable code and feedback loops that make it easy to understand whether a system is doing what users and the business need it to do.
 
-I've worked with other languages at times, including **Python**, **PHP**, **Javascript** and am confident in my ability to pick up other languages to work with if required.
-
-I'm a strong believer in the effectiveness **Test-Driven Development (TDD)** to help inform the design of your code as well as providing assurances that the code is correct.
+I'm a strong believer in **Test-Driven Development (TDD)** and in using tests to inform the design of code as well as provide assurance that it behaves correctly.
 
 ### Infrastructure Automation
 
-I'm a huge advocate of infrastructure automation and infrastructure as code. I've worked extensivley with **Puppet**, **Ansible**, and **Terraform** to automate infrastructure on-premise (**VMware** and bare-metal) as well as in the cloud (**AWS**).
+I'm a huge advocate of infrastructure automation and infrastructure as code. I've worked extensively with **Puppet**, **Ansible**, **Terraform**, and cloud-native automation to operate infrastructure on-premise and in the cloud.
 
-While I don't believe that the recently popularised term "GitOps" is defining a new concept, I do love that it succintly describes an approach to operating infrastructure and applications that is driven through source control. This is something I believe is extra important on top of core automation practices to ensure good audit-trails and promote declarative and idempotent changes.
+While I don't believe that the recently popularised term "GitOps" defines a wholly new concept, I do love that it succinctly describes an approach to operating infrastructure and applications through source control. This is especially important on top of core automation practices to ensure good audit trails and promote declarative, idempotent changes.
 
 ### Containers
 
-My immersion in the use of Linux containers began in 2013 and I was a champion for their adoption at IOOF. We initially started working with **Docker** directly for our container platform, however I strongly advocated for our move to **Kubernetes** once it had reached a level of maturity and adoption that made sense for us.
+My immersion in Linux containers began in 2013 and I was a champion for their adoption at IOOF. We initially started working with **Docker** directly for our container platform, and I strongly advocated for our move to **Kubernetes** once it reached a level of maturity and adoption that made sense for us.
+
+I continue to work heavily with container platforms, Kubernetes-adjacent workflows, cloud runtime choices, CI/CD pipelines, and the operational practices needed to make those platforms usable by delivery teams.
 
 ### Systems Administration
 
 I'm a confident **Linux** systems administrator and have worked with **RHEL**, **Debian**, and **Ubuntu** in production systems over the years.
 
-While I'm most comfortable on Linux, I am no stranger to **Windows** and have worked with Windows Server automation in the years I've worked at IOOF.
+While I'm most comfortable on Linux, I am no stranger to **Windows** and have worked with Windows Server automation and enterprise identity environments across several roles.
 
 ### DevOps, Agile, CI/CD
 
-Despite the frequent overloading of terms like **DevOps**, **Agile**, and **CI/CD** these days, I still believe there are core principles within each of these areas that are very useful.
+Despite the frequent overloading of terms like **DevOps**, **Agile**, and **CI/CD**, I still believe there are core principles within each of these areas that are very useful.
 
 The strong feedback loops that are core to these ideas are critical to delivering software and systems reliably and efficiently.
 
-The "people over process" part of the Agile manifesto and the "breaking down silos" idea from DevOps are concepts that resonate with me and really inform how I work.
+The "people over process" part of the Agile manifesto and the "breaking down silos" idea from DevOps are concepts that resonate with me and inform how I work.
 
 ### Observability
 
 In my experience, observability is more than a buzzword—it's a critical part of the software delivery lifecycle. It's not just about gathering data, but transforming that data into **actionable insights**.
 
-Observability has been key in my work, closing the feedback loops and guiding my decisions. It's been instrumental in tracking user journeys and meeting critical business service-level objectives.
+Observability has been key in my work, closing feedback loops and guiding decisions. It has been instrumental in tracking user journeys, meeting business service-level objectives, and helping teams move from "is the system up?" to "is it supporting the customer and business outcome?"
 
-I've had the opportunity to work with a range of tools, including the **Elastic** platform, **Splunk**, **New Relic**, **Prometheus**, and **Grafana**. But it's not just about the tools—it's about how we use them to understand our systems, spot patterns, and make data-driven decisions that boost software quality and user satisfaction.
+I've had the opportunity to work with a range of tools, including **Datadog**, the **Elastic** platform, **Splunk**, **New Relic**, **Prometheus**, and **Grafana**. But it's not just about the tools—it's about how we use them to understand our systems, spot patterns, and make data-driven decisions that improve software quality and user satisfaction.
 
-To me, observability is about proactively maintaining the health and performance of our software, ensuring it performs optimally under real-world conditions, and constantly striving for improvement.
+To me, observability is about proactively maintaining the health and performance of our software, reducing cognitive load during incidents, and constantly striving for improvement.
 
 ---
 
 ## Experience
 
-### 2022-Present — LimePoint — Senior Software Engineer
+### 2024-Present — Wesfarmers OneDigital — Staff SRE
 
-Since early 2022, I've been working as a software engineer at LimePoint, contributing to the [OpsChain](https://opschain.io) product.
+At Wesfarmers OneDigital, I work across platform, reliability, observability, and developer enablement for systems supporting OnePass, OneData, and the broader Wesfarmers digital retail ecosystem.
 
-This work involves working with Ruby on Rails, as well a heavy use of Linux containers and Kubernetes. Recently, this work has also involved web frontend development with Typescript and React.
+Key contributions include:
 
-During my time at LimePoint, I've also been working on my **product management** skills—helping to focus the goals of the product and ensure we're delivering a cohesive and attractive solution to our potential users.
+- **Observability strategy and operational maturity:** helping teams connect telemetry, customer journeys, incident response, and business outcomes rather than treating observability as only dashboards and infrastructure metrics.
+- **Datadog platform evolution:** contributing to Datadog adoption and optimisation, PagerDuty to Datadog On-Call migration planning and communications, RUM rollout and cost modelling, and training teams on trace search, logging, dashboards, and incident workflows.
+- **SLO and customer-journey framing:** drafting and publishing SLA/SLO material for OnePass Mobile SSO and working through async event SLO questions for OneShare-style event flows, including latency definition, missing SLIs, and business impact.
+- **Cloud and platform architecture:** supporting GCP Foundations and OneData migration planning, including Cloud Run / GKE / Composer evaluation, artifact registry strategy, package governance, and secure container workflows.
+- **CI/CD and delivery systems:** working on Buildkite migration and hosted-agent options, with a focus on reusable patterns, feedback loops, and reducing delivery friction.
+- **AI-augmented engineering practice:** using LLMs and agentic coding tools extensively for research, code iteration, review support, documentation, and workflow automation; maintaining a structured knowledge base of AI-agent patterns, memory, sandboxing, MCP, and agent orchestration approaches.
+- **Internal and external speaking:** presenting and facilitating Engineering Community Talks, Klaxon Therapy / Datadog On-Call workshops, Platform KT sessions, Agentic Coding Working Group discussions, and the Agentic Engineering All-In Day; externally representing OneDigital on the Datadog Live Melbourne panel.
+
+### 2022-2024 — LimePoint — Senior Software Engineer
+
+At LimePoint, I worked as a software engineer contributing to the [OpsChain](https://opschain.io) product.
+
+This work involved Ruby on Rails, Linux containers, Kubernetes, web frontend development with TypeScript and React, and close collaboration around product direction and user experience.
+
+During my time at LimePoint, I also developed my **product management** skills—helping to focus the goals of the product and ensure we were delivering a cohesive and attractive solution to potential users.
 
 ### 2018-2021 — IOOF — Platform Infrastructure Team Lead
 
 In 2018 I was given the opportunity to take over the leadership role for my team at IOOF.
 
-During this time, I have continued to be involved in hands-on technical leadership within the team, while also developing my skills in team management, team roadmap planning, stakeholder communication, and vendor management.
+During this time, I continued to be involved in hands-on technical leadership within the team, while also developing my skills in team management, team roadmap planning, stakeholder communication, and vendor management.
 
-Notable work that has been completed under my leadership includes:
+Notable work completed under my leadership included:
 
 - **Migrating the core of our internal container platform to Kubernetes—deployed on-premise using Rancher.**  
-  This involved keeping the existing developer experience largely the same, while replacing the core of the platform. We developed some simple CRDs that helped deploy and operate our internal representation of an environment.
-- **Initial phase of increasing our AWS adoption in preparation on-boarding workloads that are part of the merger with MLC.**   
-  This involves building out a multi-account organisation structure with guard rails and best-practices to satisfy stringent compliance and security requirements while still providing as much autonomy to application teams to operate the environments in the way that works for them.
+  This involved keeping the existing developer experience largely the same while replacing the core of the platform. We developed simple CRDs that helped deploy and operate our internal representation of an environment.
+- **Initial phase of increasing our AWS adoption in preparation for onboarding workloads that were part of the merger with MLC.**  
+  This involved building out a multi-account organisation structure with guard rails and best practices to satisfy stringent compliance and security requirements while still giving application teams as much autonomy as possible.
 
 ### 2014-2018 — IOOF — Infrastructure Programmer
 
-During my initial 4 years at IOOF, I developed my skills in infrastructure automation and software delivery tools, while contributing to our team's efforts to make it easy for software delivery teams to efficiently deliver their software for the business.
+During my initial 4 years at IOOF, I developed my skills in infrastructure automation and software delivery tools, while contributing to our team's efforts to make it easy for software delivery teams to efficiently deliver software for the business.
 
-While I have been involved in all aspects of our team's infrastructure automation work, I have given particular focus to our internal platform-as-a-service and the underlying Linux container ecosystem it is based on. This platform strived to provide all the the tools & techniniques our delivery teams need to effciently deploy, operate, and observe their applications.
+While I was involved in all aspects of our team's infrastructure automation work, I gave particular focus to our internal platform-as-a-service and the underlying Linux container ecosystem it was based on. This platform aimed to provide the tools and techniques our delivery teams needed to efficiently deploy, operate, and observe their applications.
 
-I was often in the de-facto technical lead position within the team, providing technical leadership, as well as mentoring less experienced members of the team.
+I was often in the de-facto technical lead position within the team, providing technical leadership as well as mentoring less experienced members of the team.
 
 ### 2006-2014 — Self-Employed — Web Developer
 
