@@ -5,7 +5,7 @@ draft: false
 
 ## Hi, I'm **Scott Arthur**.
 
-I'm a **Staff SRE, software engineer, and AI-augmented platform technologist** who likes solving messy problems where software, infrastructure, reliability, developer experience, and people all meet.
+I'm a **Staff SRE focused on reliability, observability, and agentic engineering**.
 
 My background spans web and software development, infrastructure automation, cloud platforms, Kubernetes, CI/CD, observability, and systems administration. Recently, my work has increasingly focused on **agentic engineering**: using LLMs, coding agents, structured context, and automation to improve how engineers build, review, support, and operate software.
 
