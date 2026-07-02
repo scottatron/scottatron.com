@@ -75,7 +75,7 @@ strokes = [
 ]
 
 paths = '\n'.join(
-    f'  <path d="{stroke_outline(**s)}" fill="#eb5e28"/>' for s in strokes
+    f'  <path d="{stroke_outline(**s)}" fill="#007d79"/>' for s in strokes
 )
 svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
   <!-- calligraphic brush asterisk; fill colour matches the accent variable in main.css -->
