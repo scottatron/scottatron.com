@@ -7,7 +7,7 @@ draft: false
 
 Staff SRE — Reliability / Observability / Agentic Engineering
 
-My background spans web and software development, infrastructure automation, cloud platforms, Kubernetes, CI/CD, observability, and systems administration. Recently, my work has increasingly focused on **agentic engineering**: using LLMs, coding agents, structured context, and automation to improve how engineers build, review, support, and operate software.
+I'm a passionate technologist whose background spans web and software development, infrastructure automation, cloud platforms, Kubernetes, CI/CD, observability, and systems administration. Recently, my work has increasingly focused on **agentic engineering**: using LLMs, coding agents, structured context, and automation to improve how engineers build, review, support, and operate software.
 
 Engaging with people to understand the challenges they're facing, and devising an iterative approach to solve them, is my favourite part of what I do. Sometimes this involves a complex technological strategy, but often a simple, pragmatic approach can be just as effective.
 
@@ -94,7 +94,7 @@ During my time at LimePoint, I also developed my **product management** skills�
 
 ### 2018-2021 — IOOF — Platform Infrastructure Team Lead
 
-In 2018 I was given the opportunity to take over the leadership role for my team at IOOF.
+In 2018 I was given the opportunity to take over the leadership role for my team at [IOOF](https://www.ioof.com.au).
 
 During this time, I continued to be involved in hands-on technical leadership within the team, while also developing my skills in team management, team roadmap planning, stakeholder communication, and vendor management.
 
@@ -119,4 +119,4 @@ I worked as a self-employed web developer for 8 years, building websites and web
 
 ### 2002-2006 — Working In — Web Administrator
 
-During my time at Working In, I was a member of the web team and was responsible for email newsletter development, coordinating work on our websites with our external web development company, and search engine optimisation of our website's content.
+During my time at [Working In](https://workingin.com), I was a member of the web team and was responsible for email newsletter development, coordinating work on our websites with our external web development company, and search engine optimisation of our website's content.
