@@ -43,12 +43,13 @@
     --ink-secondary: #525252;
     --hairline: #e0e0e0;
     --accent: #eb5e28;
+    --paper: #faf9f7;
 }
 
 body {
     @apply font-sans;
     color: var(--ink);
-    background: #ffffff;
+    background: var(--paper);
 }
 
 .topbar {
