@@ -15,7 +15,6 @@ I take pride in thinking about user experience in everything I build, whether th
 
 ### Contact Me
 
-+614****1882  
 scott@scottatron.com  
 [github.com/scottatron](https://github.com/scottatron)  
 [linkedin.com/in/scottatron](https://www.linkedin.com/in/scottatron)  
