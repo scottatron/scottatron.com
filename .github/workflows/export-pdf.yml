@@ -70,14 +70,14 @@ jobs:
       - run: screencapture screen.png
         if: ${{ failure() }}
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: screen.png
           path: screen.png
         if: ${{ failure() }}
 
       - name: Upload PDF as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: pdf
           path: Scott-Arthur-CV-${{ env.version }}.pdf
