@@ -42,43 +42,21 @@ At Wesfarmers OneDigital, I focus on whatever is creating the most operational n
 
 ### Technical Communication, Storytelling & Enablement
 
-I have recently been developing a stronger public and internal technical communication practice. At OneDigital, this has included Engineering Community Talks, Klaxon Therapy / on-call workshops, Platform KT sessions, Agentic Coding Working Group contributions, and the Agentic Engineering All-In Day, where I presented on agentic code reviews and AWS/GCP platform guidance.
+I have recently been developing a stronger public and internal technical communication practice. At OneDigital, this has included Engineering Community Talks, Klaxon Therapy / on-call workshops, team knowledge-sharing sessions, Agentic Coding Working Group contributions, and the Agentic Engineering All-In Day, where I presented on agentic code reviews and AWS/GCP platform guidance.
 
 Externally, I spoke on the Datadog Live Melbourne panel about observability, SLOs, customer journeys, signal-vs-noise-vs-cost trade-offs, and how observability needs to evolve for AI and LLM systems. That speaking work reflects the kind of enablement I value: not just building patterns, but explaining them clearly enough that other teams can adopt them safely.
 
 ### Software Development
 
-I'm a confident **Ruby** developer and it is the language that I'm most fluent in. I love Ruby's expressiveness and the friendly nature of the community around the language.
+These days I write most of my code in **Go**, **Python**, and **TypeScript** — Go and Python for platform tooling, automation, and AI-agent workflows, and TypeScript for web frontends and Node-based tooling. I came up through **Ruby**, which is still the language I'm most fluent in and where my instincts for clean, expressive code were formed.
 
-I've also worked with **Go**, **Python**, **PHP**, **JavaScript**, and **TypeScript**, and am confident in my ability to pick up other languages as required. I value simple, maintainable code and feedback loops that make it easy to understand whether a system is doing what users and the business need it to do.
+I value simple, maintainable code, fast feedback loops, and using tests to both inform design and give confidence that a system does what users and the business need it to do.
 
-I'm a strong believer in **Test-Driven Development (TDD)** and in using tests to inform the design of code as well as provide assurance that it behaves correctly.
+### Cloud Infrastructure & Platform Engineering
 
-### Infrastructure Automation
+I'm a strong advocate for infrastructure as code and GitOps-style delivery: source-controlled, declarative, idempotent changes with good audit trails. I've worked extensively with **Terraform**, **Kubernetes**, and container platforms — from championing containers and Kubernetes adoption at IOOF through to running modern workloads on **AWS** and **GCP** at Wesfarmers OneDigital.
 
-I'm a huge advocate of infrastructure automation and infrastructure as code. I've worked extensively with **Puppet**, **Ansible**, **Terraform**, and cloud-native automation to operate infrastructure on-premise and in the cloud.
-
-While I don't believe that the recently popularised term "GitOps" defines a wholly new concept, I do love that it succinctly describes an approach to operating infrastructure and applications through source control. This is especially important on top of core automation practices to ensure good audit trails and promote declarative, idempotent changes.
-
-### Containers
-
-My immersion in Linux containers began in 2013 and I was a champion for their adoption at IOOF. We initially started working with **Docker** directly for our container platform, and I strongly advocated for our move to **Kubernetes** once it reached a level of maturity and adoption that made sense for us.
-
-I continue to work heavily with container platforms, Kubernetes-adjacent workflows, cloud runtime choices, CI/CD pipelines, and the operational practices needed to make those platforms usable by delivery teams.
-
-### Systems Administration
-
-I'm a confident **Linux** systems administrator and have worked with **RHEL**, **Debian**, and **Ubuntu** in production systems over the years.
-
-While I'm most comfortable on Linux, I am no stranger to **Windows** and have worked with Windows Server automation and enterprise identity environments across several roles.
-
-### DevOps, Agile, CI/CD
-
-Despite the frequent overloading of terms like **DevOps**, **Agile**, and **CI/CD**, I still believe there are core principles within each of these areas that are very useful.
-
-The strong feedback loops that are core to these ideas are critical to delivering software and systems reliably and efficiently.
-
-The "people over process" part of the Agile manifesto and the "breaking down silos" idea from DevOps are concepts that resonate with me and inform how I work.
+My focus is on the practices that make platforms genuinely usable by delivery teams day to day: CI/CD pipelines, reusable automation, sensible guardrails, and fast feedback loops that let teams ship and operate software reliably and efficiently.
 
 ### Observability
 
@@ -106,7 +84,7 @@ Key contributions include:
 - **Cloud and platform architecture:** supporting GCP Foundations and OneData migration planning, including Cloud Run / GKE / Composer evaluation, artifact registry strategy, package governance, and secure container workflows.
 - **CI/CD and delivery systems:** working on Buildkite migration and hosted-agent options, with a focus on reusable patterns, feedback loops, and reducing delivery friction.
 - **AI-augmented engineering practice:** using LLMs and agentic coding tools extensively for research, code iteration, review support, documentation, and workflow automation; maintaining a structured knowledge base of AI-agent patterns, memory, sandboxing, MCP, and agent orchestration approaches.
-- **Internal and external speaking:** presenting and facilitating Engineering Community Talks, Klaxon Therapy / Datadog On-Call workshops, Platform KT sessions, Agentic Coding Working Group discussions, and the Agentic Engineering All-In Day; externally representing OneDigital on the Datadog Live Melbourne panel.
+- **Internal and external speaking:** presenting and facilitating Engineering Community Talks, Klaxon Therapy / Datadog On-Call workshops, team knowledge-sharing sessions, Agentic Coding Working Group discussions, and the Agentic Engineering All-In Day; externally representing OneDigital on the Datadog Live Melbourne panel.
 
 ### 2022-2024 — LimePoint — Senior Software Engineer
 
