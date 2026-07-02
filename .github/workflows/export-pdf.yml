@@ -26,11 +26,79 @@ jobs:
             sleep 1
           done
 
-      - name: Allow bash to control Safari
+      - name: Allow workflow processes to control Safari
         run: |
           epochdate=$(($(date +'%s * 1000 + %-N / 1000000')))
-          tcc_service_appleevents="replace into access (service,client,client_type,auth_value,auth_reason,auth_version,indirect_object_identifier_type,indirect_object_identifier,flags,last_modified) values (\"kTCCServiceAppleEvents\",\"/bin/bash\",1,2,4,1,0,\"com.apple.Safari\",0,$epochdate);"
-          sqlite3 "/Users/runner/Library/Application Support/com.apple.TCC/TCC.db" "$tcc_service_appleevents"
+          tcc_db="/Users/runner/Library/Application Support/com.apple.TCC/TCC.db"
+          safari_bundle_id="com.apple.Safari"
+
+          clients=(
+            "/bin/bash"
+            "/usr/bin/osascript"
+          )
+
+          while IFS= read -r agent_pid; do
+            agent_path=$(ps -p "$agent_pid" -o comm=)
+            if [[ -n "$agent_path" ]]; then
+              clients+=("$agent_path")
+            fi
+          done < <(pgrep -x hosted-compute-agent || true)
+
+          for client in "${clients[@]}"; do
+            echo "Allowing $client to control Safari"
+            sqlite3 "$tcc_db" "
+              replace into access (
+                service,
+                client,
+                client_type,
+                auth_value,
+                auth_reason,
+                auth_version,
+                indirect_object_identifier_type,
+                indirect_object_identifier,
+                flags,
+                last_modified
+              ) values (
+                'kTCCServiceAppleEvents',
+                '$client',
+                1,
+                2,
+                4,
+                1,
+                0,
+                '$safari_bundle_id',
+                0,
+                $epochdate
+              );
+            "
+          done
+
+          echo "Allowing hosted-compute-agent to control Safari"
+          sqlite3 "$tcc_db" "
+            replace into access (
+              service,
+              client,
+              client_type,
+              auth_value,
+              auth_reason,
+              auth_version,
+              indirect_object_identifier_type,
+              indirect_object_identifier,
+              flags,
+              last_modified
+            ) values (
+              'kTCCServiceAppleEvents',
+              'hosted-compute-agent',
+              0,
+              2,
+              4,
+              1,
+              0,
+              '$safari_bundle_id',
+              0,
+              $epochdate
+            );
+          "
 
       - name: Export webpage as PDF
         run: |
