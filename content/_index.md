@@ -5,7 +5,7 @@ draft: false
 
 # Hi, I'm **Scott Arthur**.
 
-I'm a **Staff SRE focused on reliability, observability, and agentic engineering**.
+Staff SRE — Reliability / Observability / Agentic Engineering
 
 My background spans web and software development, infrastructure automation, cloud platforms, Kubernetes, CI/CD, observability, and systems administration. Recently, my work has increasingly focused on **agentic engineering**: using LLMs, coding agents, structured context, and automation to improve how engineers build, review, support, and operate software.
 
@@ -42,7 +42,7 @@ At Wesfarmers OneDigital, I focus on whatever is creating the most operational n
 
 I have recently been developing a stronger public and internal technical communication practice. At OneDigital, this has included Engineering Community Talks, Klaxon Therapy / on-call workshops, team knowledge-sharing sessions, Agentic Coding Working Group contributions, and the Agentic Engineering All-In Day, where I presented on agentic code reviews and AWS/GCP platform guidance.
 
-Externally, I spoke on the Datadog Live Melbourne panel about observability, SLOs, customer journeys, signal-vs-noise-vs-cost trade-offs, and how observability needs to evolve for AI and LLM systems. That speaking work reflects the kind of enablement I value: not just building patterns, but explaining them clearly enough that other teams can adopt them safely.
+Externally, I spoke on the [Datadog Live Melbourne](https://events.datadoghq.com/events/datadog-live-melbourne-2026/) panel about observability, SLOs, customer journeys, signal-vs-noise-vs-cost trade-offs, and how observability needs to evolve for AI and LLM systems. That speaking work reflects the kind of enablement I value: not just building patterns, but explaining them clearly enough that other teams can adopt them safely.
 
 ### Software Development
 

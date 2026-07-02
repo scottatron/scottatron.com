@@ -42,7 +42,7 @@
   --ink: #161616;
   --ink-secondary: #525252;
   --hairline: #e0e0e0;
-  --accent: #ff4f00;
+  --accent: #eb5e28;
 }
 
 body {
@@ -66,16 +66,28 @@ body {
 .prose h1 {
   color: var(--ink);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: clamp(2rem, 6vw, 2.75rem);
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+/* Role line: first paragraph after the name, set as mono caps */
+.prose h1 + p {
+  font-family: theme('fontFamily.mono');
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-secondary);
+  margin-top: 0;
 }
 
 /* Section labels: mono, uppercase, letterspaced, above a rule */
 .prose h2 {
   font-family: theme('fontFamily.mono');
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   color: var(--ink-secondary);
   border-top: 2px solid var(--ink);
   padding-top: 0.875rem;
@@ -138,6 +150,39 @@ body {
 }
 .prose .link h2 .permalink {
   @apply no-underline;
+}
+
+/* Two-column grid: dates in a left gutter, body text in the main column.
+   Collapses to the stacked single-column layout below 640px. */
+@media (min-width: 640px) {
+  .prose {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 9.5rem minmax(0, 65ch);
+    column-gap: 2rem;
+  }
+  .prose > * {
+    grid-column: 2;
+  }
+  .prose > h1,
+  .prose > h1 + p,
+  .prose > h2 {
+    grid-column: 1 / -1;
+  }
+  .prose > h3.cv-entry {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 9.5rem minmax(0, 65ch);
+    column-gap: 2rem;
+  }
+  .prose h3.cv-entry .cv-date {
+    grid-column: 1;
+    margin-top: 0.3em;
+    margin-bottom: 0;
+  }
+  .prose h3.cv-entry .cv-role {
+    grid-column: 2;
+  }
 }
 
 @media print {
