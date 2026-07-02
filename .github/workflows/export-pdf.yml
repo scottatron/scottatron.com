@@ -136,9 +136,9 @@ jobs:
                   delay 0.1
                 end repeat
               end timeout
-              keystroke "h" using {command down, shift down} -- go to the home directory
               set theFile to "Scott-Arthur-CV-${{ env.version }}.pdf"
-              set value of text field 1 of sheet 1 of window 1 to theFile
+              keystroke "a" using {command down}
+              keystroke theFile
               click button "Save" of sheet 1 of window 1
               delay 1
             end tell
