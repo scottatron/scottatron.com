@@ -153,7 +153,15 @@ jobs:
           end tell
           EOF
           osascript safari_export_pdf.scpt
-          test -f "$pdf_file"
+          if [[ ! -f "$pdf_file" ]]; then
+            echo "Expected PDF was not written to $PWD/$pdf_file; searching for Safari output..."
+            find "$PWD" "$HOME" -maxdepth 5 -type f -name '*.pdf' -print
+            found_pdf=$(find "$PWD" "$HOME" -maxdepth 5 -type f -name '*.pdf' -print -quit)
+            if [[ -n "$found_pdf" ]]; then
+              mv "$found_pdf" "$pdf_file"
+            fi
+          fi
+          test -s "$pdf_file"
         # https://github.com/create-dmg/create-dmg/issues/72#issuecomment-959514966
 
       - run: screencapture screen.png
