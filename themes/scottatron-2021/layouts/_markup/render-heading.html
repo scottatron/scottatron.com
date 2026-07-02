@@ -1,0 +1,9 @@
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">
+  {{- $m := findRESubmatch `^(\d{4}\s*[-–]\s*(?:\d{4}|[Pp]resent))\s*[—–-]\s*(.+)$` (string .Text) -}}
+  {{- with $m -}}
+    {{- $date := replace (index (index . 0) 1) "-" "–" -}}
+    <span class="cv-date">{{ $date }}</span><span class="cv-role">{{ index (index . 0) 2 | safeHTML }}</span>
+  {{- else -}}
+    {{- .Text -}}
+  {{- end -}}
+</h{{ .Level }}>

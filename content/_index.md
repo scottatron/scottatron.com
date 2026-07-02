@@ -3,7 +3,7 @@ title: Hi, I'm Scott Arthur
 draft: false
 ---
 
-## Hi, I'm **Scott Arthur**.
+# Hi, I'm **Scott Arthur**.
 
 I'm a **Staff SRE focused on reliability, observability, and agentic engineering**.
 
