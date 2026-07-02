@@ -123,6 +123,8 @@ jobs:
           osascript allow_safari_prompt.scpt &
           open -a Safari "https://www.scottatron.com"
           sleep 15
+          pdf_file="Scott-Arthur-CV-${{ env.version }}.pdf"
+          output_dir="$PWD"
 
           cat > safari_export_pdf.scpt <<-EOF
           tell application "System Events"
@@ -136,7 +138,13 @@ jobs:
                   delay 0.1
                 end repeat
               end timeout
-              set theFile to "Scott-Arthur-CV-${{ env.version }}.pdf"
+              set outputFolder to "$output_dir"
+              set theFile to "$pdf_file"
+              keystroke "g" using {command down, shift down}
+              delay 0.5
+              keystroke outputFolder
+              key code 36
+              delay 0.5
               keystroke "a" using {command down}
               keystroke theFile
               click button "Save" of sheet 1 of window 1
@@ -145,7 +153,7 @@ jobs:
           end tell
           EOF
           osascript safari_export_pdf.scpt
-          mv ~/*.pdf .
+          test -f "$pdf_file"
         # https://github.com/create-dmg/create-dmg/issues/72#issuecomment-959514966
 
       - run: screencapture screen.png
