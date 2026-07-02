@@ -1,7 +1,7 @@
 baseURL = 'https://www.scottatron.com/'
 languageCode = 'en-us'
 title = 'Scottatron.com'
-theme = 'scottatron-2021'
+theme = 'scottatron-2026'
 
 [permalinks]
 links = "/links/:year/:month/:day/:title"

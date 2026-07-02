@@ -1,0 +1,10 @@
+{{- $level := .Level -}}
+{{- $anchor := .Anchor -}}
+{{- $m := findRESubmatch `^(\d{4}\s*[-–]\s*(?:\d{4}|[Pp]resent))\s*[—–-]\s*(.+)$` (string .Text) -}}
+{{- if $m -}}
+<h{{ $level }} id="{{ $anchor | safeURL }}" class="cv-entry"><span class="cv-date">{{ replace (index (index $m 0) 1) "-" "–" }}</span><span class="cv-role">{{ index (index $m 0) 2 | safeHTML }}</span></h{{ $level }}>
+{{- else if and (eq $level 1) (strings.HasSuffix (string .Text) ".") -}}
+<h{{ $level }} id="{{ $anchor | safeURL }}">{{ strings.TrimSuffix "." (string .Text) | safeHTML }}<span class="accent-dot">.</span></h{{ $level }}>
+{{- else -}}
+<h{{ $level }} id="{{ $anchor | safeURL }}">{{ .Text }}</h{{ $level }}>
+{{- end -}}
