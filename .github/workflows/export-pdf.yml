@@ -35,12 +35,17 @@ jobs:
       - name: Export webpage as PDF
         run: |
           cat > safari_export_pdf.scpt <<-EOF
-          with timeout of 30 seconds
+          with timeout of 120 seconds
             tell application "Safari"
               activate
-              set theURL to "https://www.scottatron.com"
-              make new document with properties {URL:theURL}
-              delay 5
+              if not (exists document 1) then
+                make new document
+              end if
+              set URL of current tab of window 1 to "https://www.scottatron.com"
+              repeat until URL of current tab of window 1 contains "scottatron.com"
+                delay 0.2
+              end repeat
+              delay 10
             end tell
           end timeout
 
@@ -48,18 +53,18 @@ jobs:
             tell process "Safari"
               set frontmost to true
               set size of window 1 to {960, 1080}
-              delay 0.5
+              delay 1
               click menu item "Export as PDF…" of menu "File" of menu bar 1
-              with timeout of 5 seconds
+              with timeout of 30 seconds
                 repeat until exists sheet 1 of window 1
-                  delay 0.02
+                  delay 0.1
                 end repeat
               end timeout
               keystroke "h" using {command down, shift down} -- go to the home directory
               set theFile to "Scott-Arthur-CV-${{ env.version }}.pdf"
               set value of text field 1 of sheet 1 of window 1 to theFile
               click button "Save" of sheet 1 of window 1
-              delay 0.5
+              delay 1
             end tell
           end tell
           EOF
