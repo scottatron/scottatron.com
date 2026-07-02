@@ -72,6 +72,12 @@ body {
     line-height: 1.05;
 }
 
+.prose h1 .accent-dot {
+    color: var(--accent);
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+}
+
 /* Role line: first paragraph after the name, set as mono caps */
 .prose h1 + p {
     font-family: theme("fontFamily.mono");
