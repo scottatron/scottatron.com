@@ -19,8 +19,6 @@ I take pride in thinking about user experience in everything I build, whether th
 scott@scottatron.com  
 [github.com/scottatron](https://github.com/scottatron)  
 [linkedin.com/in/scottatron](https://www.linkedin.com/in/scottatron)  
-[twitter.com/scottatron](https://twitter.com/scottatron)  
-{{< mastodon-link >}}
 
 ---
 
