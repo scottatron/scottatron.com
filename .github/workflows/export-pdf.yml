@@ -102,21 +102,26 @@ jobs:
 
       - name: Export webpage as PDF
         run: |
-          cat > safari_export_pdf.scpt <<-EOF
-          with timeout of 120 seconds
-            tell application "Safari"
-              activate
-              if not (exists document 1) then
-                make new document
-              end if
-              set URL of current tab of window 1 to "https://www.scottatron.com"
-              repeat until URL of current tab of window 1 contains "scottatron.com"
-                delay 0.2
+          cat > allow_safari_prompt.scpt <<-EOF
+          repeat 600 times
+            tell application "System Events"
+              repeat with appProcess in application processes
+                try
+                  if exists button "Allow" of window 1 of appProcess then
+                    click button "Allow" of window 1 of appProcess
+                    return
+                  end if
+                end try
               end repeat
-              delay 10
             end tell
-          end timeout
+            delay 0.2
+          end repeat
+          EOF
+          osascript allow_safari_prompt.scpt &
+          open -a Safari "https://www.scottatron.com"
+          sleep 15
 
+          cat > safari_export_pdf.scpt <<-EOF
           tell application "System Events"
             tell process "Safari"
               set frontmost to true
