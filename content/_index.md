@@ -42,7 +42,7 @@ At Wesfarmers OneDigital, I focus on whatever is creating the most operational n
 
 I have recently been developing a stronger public and internal technical communication practice. At OneDigital, this has included Engineering Community Talks, Klaxon Therapy / on-call workshops, team knowledge-sharing sessions, Agentic Coding Working Group contributions, and the Agentic Engineering All-In Day, where I presented on agentic code reviews and AWS/GCP platform guidance.
 
-Externally, I spoke on the [Datadog Live Melbourne](https://events.datadoghq.com/events/datadog-live-melbourne-2026/) panel about observability, SLOs, customer journeys, signal-vs-noise-vs-cost trade-offs, and how observability needs to evolve for AI and LLM systems. That speaking work reflects the kind of enablement I value: not just building patterns, but explaining them clearly enough that other teams can adopt them safely.
+Most recently, I was invited to be a panelist at the [Datadog Live Melbourne](https://events.datadoghq.com/events/datadog-live-melbourne-2026/) event, speaking about observability, SLOs, customer journeys, signal-vs-noise-vs-cost trade-offs, and how observability needs to evolve for AI and LLM systems. That speaking work reflects the kind of enablement I value: not just building patterns, but explaining them clearly enough that other teams can adopt them safely.
 
 ### Software Development
 
@@ -86,7 +86,7 @@ Key contributions include:
 
 ### 2022-2024 — LimePoint — Senior Software Engineer
 
-At LimePoint, I worked as a software engineer contributing to the [OpsChain](https://opschain.io) product.
+At [LimePoint](https://limepoint.com), I worked as a software engineer contributing to the [OpsChain](https://opschain.io) product.
 
 This work involved Ruby on Rails, Linux containers, Kubernetes, web frontend development with TypeScript and React, and close collaboration around product direction and user experience.
 
